@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuPrimaryComponent } from '../app/components/menu-primary/menu-primary.component';
-import * as $ from 'jquery';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -9,6 +8,7 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   title = 'empresaabc';
+
   openMenu() {
     $('.menu').animate({ left: '0px' }, 10);
   }
