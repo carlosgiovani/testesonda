@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -9,10 +8,5 @@ declare var $: any;
 export class AppComponent {
   title = 'empresaabc';
 
-  openMenu() {
-    $('.menu').animate({ left: '0px' }, 10);
-  }
-  closeMenu() {
-    $('.menu').animate({ left: '-240px' }, 10);
-  }
+
 }

@@ -1,16 +1,16 @@
 <app-header></app-header>
 <div class="d-flex content-home">
-  <app-menu-primary></app-menu-primary>
   <div class="column-content">
     <div class="bar-breadcrump">
-      <i class="fa fa-bars mr-4 cursor-pointer{" (click)="openMenu1()" aria-hidden="true"></i>
-      logo
+      <i class="fa fa-bars mr-4 cursor-pointer" (click)="toggleMenu()" aria-hidden="true"></i>
+      <img src="assets/logo.png" style="width:140px">
     </div>
     <div class="info-page">
       <h5 class="mb-0">Home</h5>
       <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua</small>
     </div>
+    <app-menu-right [@slideInOut]="menuState"></app-menu-right>
     <div class="logo-home">
       <img src="assets/logo.png" title="logo">
     </div>

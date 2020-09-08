@@ -7,7 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './views/login/login.component';
 import { MenuComponent } from './views/menu/menu.component';
 import { HomeComponent } from './views/home/home.component';
-import { MenuPrimaryComponent } from './components/menu-primary/menu-primary.component';
+import { MenuRightComponent } from './components/menu-right/menu-right.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,15 @@ import { MenuPrimaryComponent } from './components/menu-primary/menu-primary.com
     LoginComponent,
     MenuComponent,
     HomeComponent,
-    MenuPrimaryComponent
+    MenuRightComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [MenuPrimaryComponent]
+  exports: []
 })
 export class AppModule { }
